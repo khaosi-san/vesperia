@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>khaosi-san</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ff0015; 
+      height: 100vh;
+      display: flex;
+      transition: background-color 0.3s ease;
+    }
+
+    .mobile-text {
+      display: none;
+    }
+
+    .desktop-text {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-color: #006aff; 
+      }
+
+      .mobile-text {
+        display: block;
+      }
+
+      .desktop-text {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+</html>
